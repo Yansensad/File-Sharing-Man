@@ -26,10 +26,43 @@ def start_button(client):
             ],
         ]
         return buttons
+    if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
+        buttons = [
+            [
+                InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink3),
+            ],
+            [
+                InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
+                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+            ],
+        ]
+        return buttons
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+            ],
+            [
+                InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
+                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+            ],
+        ]
+        return buttons
+    if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
+        buttons = [
+            [
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink4),
+            ],
+            [
+                InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
+                InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
+            ],
+        ]
+        return buttons
+    if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
+        buttons = [
+            [
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink5),
             ],
             [
                 InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
@@ -45,6 +78,9 @@ def start_button(client):
             [
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
                 InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink4),
+                InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink5),
             ],
             [InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close")],
         ]
@@ -56,6 +92,7 @@ def fsub_button(client, message):
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink3),
             ],
         ]
         try:
@@ -74,6 +111,8 @@ def fsub_button(client, message):
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+                InlineKeyboardButron(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink4),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink5),
             ],
         ]
         try:
@@ -93,6 +132,9 @@ def fsub_button(client, message):
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
                 InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink4),
+                InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink5),
             ],
         ]
         try:
